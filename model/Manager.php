@@ -23,4 +23,31 @@ class Manager extends Conexao
 
         return $statement->fetchAll();
     }
+
+    public function updateCliente($table, $data, $id)
+    {
+        $pdo = parent::get_instance();
+        $new_values = "";
+        foreach ($data as $k => $v) {
+            $new_values .= "$k=:$k, ";
+        }
+        $new_values = substr($new_values, 0, -2);
+        $sql = "Update $table SET $new_values WHERE id = :id";
+        $stmt = $pdo->prepare($sql);
+        foreach ($data as $k => $v) {
+            $stmt->bindValue(":$k", $v, PDO::PARAM_STR);
+        }
+        $stmt->execute();
+    }
+
+    public function getInfo($table, $id)
+    {
+        $pdo = parent::get_instance();
+        $sql = "SELECT * FROM $table WHERE id = :id";
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindValue(":id", $id);
+        $stmt->execute();
+
+        return $stmt->fetchAll();
+    }
 }
