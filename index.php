@@ -56,8 +56,9 @@ $manager = new Manager();
                             </form>
                         </td>
                         <td>
-                            <form action="" method="POST">
-                                <button class="btn btn-danger btn-xs">
+                            <form action="controller/delete_cliente.php" method="POST" onclick="return confirm('Voce deseja excluir esse cliente?')">
+                            <input type="hidden" name="id"  value="<?= $c['id']?>">
+                            <button class="btn btn-danger btn-xs">
                                     <i class="fa fa-trash"></i>
                                 </button>
                             </form>
