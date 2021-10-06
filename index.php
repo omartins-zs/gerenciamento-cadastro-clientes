@@ -47,7 +47,8 @@ $manager = new Manager();
                         <td> <?=$c['endereco'];  ?></td>
                         <td> <?=$c['telefone'];  ?></td>
                         <td>
-                            <form action="" method="POST">
+                            <form action="views/page_update.php" method="POST">
+                            <input type="hidden" name="id"  value="<?= $c['id']?>">
                                 <button class="btn btn-warning btn-xs">
                                     <i class="fa fa-user-edit"></i>
                                 </button>
