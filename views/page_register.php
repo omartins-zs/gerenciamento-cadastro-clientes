@@ -4,12 +4,12 @@
     Pagina de registro <i class="fa fa-list"></i>
 </h2>
 
-<form action="" method="post">
+<form action="../controller/inserir_cliente.php" method="post">
     <div class="container">
         <div class="form-row">
             <div class="col-md-6">
                 Nome:<i class="fa fa-user"></i>
-                <input type="text" class="form-control" name="name" required autofocus>
+                <input type="text" class="form-control" name="nome" required autofocus>
             </div>
             <div class="col-md-6">
                 Email:<i class="fa fa-envelope"></i>
@@ -21,15 +21,15 @@
             </div>
             <div class="col-md-4">
                 Dt. de Nascimento:<i class="fa fa-calendar"></i>
-                <input type="data" class="form-control" name="birth" required>
+                <input type="date" class="form-control" name="dtnascimento" required>
             </div>
             <div class="col-md-4">
                 Telefone:<i class="fab fa-whatsapp"></i>
-                <input type="text" class="form-control" name="phone" required id="phone">
+                <input type="text" class="form-control" name="telefone" required id="telefone">
             </div>
             <div class="col-md-12">
                 Endereço:<i class="fa fa-map"></i>
-                <input type="text" class="form-control" name="address" required><br>
+                <input type="text" class="form-control" name="endereco" required><br>
             </div>
             <div class="col-md-4">
                 <a href="../index.php" class="btn btn-success btn-lg">
