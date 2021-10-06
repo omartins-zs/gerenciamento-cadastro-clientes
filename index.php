@@ -1,6 +1,7 @@
 <?php
 include_once 'model/Conexao.php';
 include_once 'model/Manager.php';
+include_once 'public/helper.php';
 
 $manager = new Manager();
 
@@ -43,7 +44,7 @@ $manager = new Manager();
                         <td> <?=$c['nome'];  ?></td>
                         <td> <?=$c['email'];  ?></td>
                         <td> <?=$c['cpf'];  ?></td>
-                        <td> <?=$c['dtnascimento'];  ?></td>
+                        <td> <?= formatDate($c['dtnascimento']);  ?></td>
                         <td> <?=$c['endereco'];  ?></td>
                         <td> <?=$c['telefone'];  ?></td>
                         <td>
