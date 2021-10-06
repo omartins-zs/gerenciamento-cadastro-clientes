@@ -32,14 +32,14 @@
                 <input type="text" class="form-control" name="address" required><br>
             </div>
             <div class="col-md-4">
-                <button class="btn btn-primary btn-lg">
-                    Inserir Cliente <i class="fa fa-user-plus"></i>
-                </button><br><br>
-
                 <a href="../index.php" class="btn btn-success btn-lg">
                     Voltar<i class="fa fa-arrow-circle-left"></i>
                 </a>
-
+            </div>
+            <div class="col-md-8 text-right">
+                <button class="btn btn-primary btn-lg">
+                    Inserir Cliente <i class="fa fa-user-plus"></i>
+                </button>
             </div>
             <!-- <div class="col-md-6">
                         Nome: <i class="fa fa-user"></i>
