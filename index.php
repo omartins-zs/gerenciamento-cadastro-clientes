@@ -1,3 +1,12 @@
+<?php
+include_once 'model/Conexao.php';
+include_once 'model/Manager.php';
+
+$manager = new Manager();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,12 +39,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Nome</td>
-                        <td>Email</td>
-                        <td>CPF</td>
-                        <td>Dt Nasc</td>
-                        <td>Enderelo</td>
-                        <td>Telefone</td>
+                        <?php foreach ($manager->listaCliente('clientes')as $c):?>
+                        <td> <?=$c['nome'];  ?></td>
+                        <td> <?=$c['email'];  ?></td>
+                        <td> <?=$c['cpf'];  ?></td>
+                        <td> <?=$c['dtnascimento'];  ?></td>
+                        <td> <?=$c['endereco'];  ?></td>
+                        <td> <?=$c['telefone'];  ?></td>
                         <td>
                             <form action="" method="POST">
                                 <button class="btn btn-warning btn-xs">
@@ -52,6 +62,7 @@
                         </td>
 
                     </tr>
+                    <?php endforeach; ?>
                 </tbody>
 
         </div>
