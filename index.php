@@ -26,8 +26,8 @@ $manager = new Manager();
             </a>
         </h5>
         <div class="table-responsive">
-            <table class="table table-hover">
-                <thead class="thead">
+            <table class="table table-hover table-dark">
+                <thead class="thead-dark">
                     <tr>
                         <th>Nome</th>
                         <th>Email</th>
@@ -49,16 +49,17 @@ $manager = new Manager();
                         <td> <?=$c['telefone'];  ?></td>
                         <td>
                             <form action="views/page_update.php" method="POST">
-                            <input type="hidden" name="id"  value="<?= $c['id']?>">
+                                <input type="hidden" name="id" value="<?= $c['id']?>">
                                 <button class="btn btn-warning btn-xs">
                                     <i class="fa fa-user-edit"></i>
                                 </button>
                             </form>
                         </td>
                         <td>
-                            <form action="controller/delete_cliente.php" method="POST" onclick="return confirm('Voce deseja excluir esse cliente?')">
-                            <input type="hidden" name="id"  value="<?= $c['id']?>">
-                            <button class="btn btn-danger btn-xs">
+                            <form action="controller/delete_cliente.php" method="POST"
+                                onclick="return confirm('Voce deseja excluir esse cliente?')">
+                                <input type="hidden" name="id" value="<?= $c['id']?>">
+                                <button class="btn btn-danger btn-xs">
                                     <i class="fa fa-trash"></i>
                                 </button>
                             </form>
