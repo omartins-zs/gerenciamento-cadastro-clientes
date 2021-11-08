@@ -20,9 +20,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - **[MySQL](https://www.w3schools.com/MySQL/default.asp)**
 
+### Atenção🔴
+
+**Usar as Bibliotecas e Frameworks nessas versões:**
+
+- **[Bootstrap 4.0](https://getbootstrap.com/docs/4.0/getting-started/introduction/)**
+
+- **[Font Awesome 5.1.0](https://fontawesome.com/)**
 
 
-#### **Utilitários**
+### **Utilitários**
 
 - **Canal do Youtube: [Yuri Menechelli](https://www.youtube.com/user/YuriMenechelli)**
 - **Icone Do PHP: [Repositorio devicons/devicon](https://github.com/devicons/devicon/tree/master/icons)**
