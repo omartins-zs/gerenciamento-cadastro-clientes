@@ -19,3 +19,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - **[CSS](https://www.w3schools.com/css/)**
 
 - **[MySQL](https://www.w3schools.com/MySQL/default.asp)**
+
+
+
+#### **Utilitários**
+
+- **Canal do Youtube: [Yuri Menechelli](https://www.youtube.com/user/YuriMenechelli)**
+- **Icone Do PHP: [Repositorio devicons/devicon](https://github.com/devicons/devicon/tree/master/icons)**
+- **Editor: [Visual Studio Code](https://code.visualstudio.com/)**
+- **Markdown: [Markdown Guide](https://www.markdownguide.org/basic-syntax/)**
+- **Emoji Markdown: [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet)**
